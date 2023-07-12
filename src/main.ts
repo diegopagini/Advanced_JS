@@ -1,7 +1,7 @@
 /** @format */
 import './style.css';
 
-import { environmentsComponent } from './concepts/01-environments';
+import { callbacksComponent } from './concepts/02-callbacks';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 
@@ -18,5 +18,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `;
 
-const element = document.querySelector('.card') as HTMLDivElement;
-environmentsComponent(element);
+const element = document.querySelector('.card') as HTMLDListElement;
+// environmentsComponent(element);
+
+callbacksComponent(element);
