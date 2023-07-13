@@ -1,7 +1,7 @@
 /** @format */
 import './style.css';
 
-import { promisesComponent } from './concepts/03-promises';
+import { asyncComponent } from './concepts/05-async';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 
@@ -21,4 +21,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 const element = document.querySelector('.card') as HTMLDListElement;
 // environmentsComponent(element);
 // callbacksComponent(element);
-promisesComponent(element);
+// promisesComponent(element);
+// promiseRaceComponent(element);
+asyncComponent(element);
