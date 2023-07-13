@@ -4,14 +4,22 @@ import { Hero } from '../interfaces/hero.interface';
 
 export const callbacksComponent = (element: HTMLElement) => {
 	const id = '5d86371f1efebc31def272e2';
+	const id2 = '5d86371f25a058e5b1c8a65e';
 
-	findHero(id, (error: string, hero: Hero) => {
+	findHero(id, (error: string, hero1: Hero) => {
 		if (error) {
 			element.innerHTML = error;
 			return;
 		}
 
-		element.innerHTML = hero.name;
+		findHero(id2, (error: string, hero2: Hero) => {
+			if (error) {
+				element.innerHTML = error;
+				return;
+			}
+
+			element.innerHTML = `${hero1.name} / ${hero2.name}`;
+		});
 	});
 };
 
