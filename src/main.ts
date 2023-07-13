@@ -1,7 +1,7 @@
 /** @format */
 import './style.css';
 
-import { forAwaitComponent } from './concepts/08-for-await';
+import { generatorsAsyncComponent } from './concepts/10-generators.async';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 
@@ -26,4 +26,6 @@ const element = document.querySelector('.card') as HTMLDListElement;
 // asyncComponent(element);
 // asyncAwaitComponent(element);
 // asyncAwait2Component(element);
-forAwaitComponent(element);
+// forAwaitComponent(element);
+// generatorFunctionsComponent(element);
+generatorsAsyncComponent(element);
