@@ -1,10 +1,9 @@
 /** @format */
 import { heroes } from '../data/heroes';
 
-
 export const asyncAwaitComponent = async (element: HTMLElement) => {
-	const id1 = '5d86371f2343e37870b91ef13';
-	const id2 = '5d86371f25a058e5b1c8a65e';
+	const id1 = '5d86371f1efebc31def272e2';
+	const id2 = '5d86371f2343e37870b91ef1';
 
 	try {
 		const hero1 = await findHero(id1);
