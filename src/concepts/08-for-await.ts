@@ -17,7 +17,7 @@ export const forAwaitComponent = async (element: HTMLElement) => {
  * @returns {Array<Promise>}
  */
 const getHeroesAsync = (heroIds: string[]) => {
-	const heroPromises: any = [];
+	const heroPromises: Promise<Hero>[] = [];
 
 	heroIds.forEach((id) => {
 		heroPromises.push(getHeroAsync(id));

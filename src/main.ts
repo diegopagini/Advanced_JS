@@ -1,7 +1,7 @@
 /** @format */
 import './style.css';
 
-import { asyncAwaitComponent } from './concepts/06-async-await';
+import { forAwaitComponent } from './concepts/08-for-await';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 
@@ -24,4 +24,6 @@ const element = document.querySelector('.card') as HTMLDListElement;
 // promisesComponent(element);
 // promiseRaceComponent(element);
 // asyncComponent(element);
-asyncAwaitComponent(element);
+// asyncAwaitComponent(element);
+// asyncAwait2Component(element);
+forAwaitComponent(element);
